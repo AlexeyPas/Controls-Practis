@@ -9,8 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var number: UInt8 = 128{
+    var number = 128{
         didSet{
+            number = (number + 256) % 256
             updateUI()
         }
     }
@@ -35,7 +36,7 @@ class ViewController: UIViewController {
         for swit in switches{
             number += swit.isOn ? swit.tag : 0
         }
-        self.number = UInt8(number % 256)
+        self.number = number
     }
     
     
@@ -64,18 +65,30 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed() {
-        number = UInt8((Int(number) + 1) % 256)
+        number += 1
     }
     
     @IBAction func switchToggel(_ sender: UISwitch) {
         updateNumberFromSwitches()
     }
     @IBAction func sliderMove() {
-        number = UInt8(slider.value)
+        number = Int(slider.value)
     }
     
     @IBAction func textFieldEdided() {
-        number = UInt8(textField.text ?? "") ?? 128
+        number = Int(textField.text ?? "") ?? 0
+    }
+    
+    @IBAction func screenTapped(_ sender: UITapGestureRecognizer) {
+        let position = sender.location(in: view)
+        if position.y > view.bounds.midY {
+            if position.x < view.bounds.midX{
+                number -= 1
+            }else{
+                number += 1
+            }
+        }
+        
     }
 }
 
