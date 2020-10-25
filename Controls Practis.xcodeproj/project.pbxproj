@@ -13,6 +13,8 @@
 		555951F425460AA40046B26F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555951F225460AA40046B26F /* Main.storyboard */; };
 		555951F625460AA90046B26F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555951F525460AA90046B26F /* Assets.xcassets */; };
 		555951F925460AA90046B26F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555951F725460AA90046B26F /* LaunchScreen.storyboard */; };
+		5559520325463E100046B26F /* screenshot 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5559520225463E100046B26F /* screenshot 1.png */; };
+		5559520625463E180046B26F /* screenshot 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5559520525463E180046B26F /* screenshot 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		555951F525460AA90046B26F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		555951F825460AA90046B26F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		555951FA25460AA90046B26F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5559520225463E100046B26F /* screenshot 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot 1.png"; sourceTree = "<group>"; };
+		5559520525463E180046B26F /* screenshot 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screenshot 2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		555951EB25460AA40046B26F /* Controls Practis */ = {
 			isa = PBXGroup;
 			children = (
+				5559520125463DF60046B26F /* Screenshots */,
 				555951EC25460AA40046B26F /* AppDelegate.swift */,
 				555951EE25460AA40046B26F /* SceneDelegate.swift */,
 				555951F025460AA40046B26F /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				555951FA25460AA90046B26F /* Info.plist */,
 			);
 			path = "Controls Practis";
+			sourceTree = "<group>";
+		};
+		5559520125463DF60046B26F /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				5559520225463E100046B26F /* screenshot 1.png */,
+				5559520525463E180046B26F /* screenshot 2.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,8 @@
 			files = (
 				555951F925460AA90046B26F /* LaunchScreen.storyboard in Resources */,
 				555951F625460AA90046B26F /* Assets.xcassets in Resources */,
+				5559520325463E100046B26F /* screenshot 1.png in Resources */,
+				5559520625463E180046B26F /* screenshot 2.png in Resources */,
 				555951F425460AA40046B26F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
