@@ -17,72 +17,79 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ymu-uT-CtI">
-                                <rect key="frame" x="53" y="260" width="49" height="31"/>
+                                <rect key="frame" x="319" y="187" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchToggel:" destination="BYZ-38-t0r" eventType="valueChanged" id="3HC-bK-7ge"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RaZ-lh-87G">
-                                <rect key="frame" x="126" y="260" width="49" height="31"/>
+                                <rect key="frame" x="275" y="187" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchToggel:" destination="BYZ-38-t0r" eventType="valueChanged" id="xEh-t8-G1A"/>
                                 </connections>
                             </switch>
+                            <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNV-jR-PwV">
+                                <rect key="frame" x="230" y="187" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchToggel:" destination="BYZ-38-t0r" eventType="valueChanged" id="OTe-KO-uUb"/>
+                                </connections>
+                            </switch>
                             <switch opaque="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nre-rs-Xvr">
-                                <rect key="frame" x="275" y="260" width="49" height="31"/>
+                                <rect key="frame" x="185" y="187" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchToggel:" destination="BYZ-38-t0r" eventType="valueChanged" id="nfX-HK-PY7"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" tag="16" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qm7-Fm-pLn">
-                                <rect key="frame" x="53" y="312" width="49" height="31"/>
+                                <rect key="frame" x="141" y="187" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchToggel:" destination="BYZ-38-t0r" eventType="valueChanged" id="wtb-xH-JBQ"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" tag="32" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Egc-Jd-ukC">
-                                <rect key="frame" x="126" y="312" width="49" height="31"/>
+                                <rect key="frame" x="97" y="187" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchToggel:" destination="BYZ-38-t0r" eventType="valueChanged" id="unI-lk-BXy"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" tag="64" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmc-zT-DUe">
-                                <rect key="frame" x="202" y="312" width="49" height="31"/>
+                                <rect key="frame" x="53" y="187" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchToggel:" destination="BYZ-38-t0r" eventType="valueChanged" id="3uR-ul-s6v"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" tag="128" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ovy-Hg-NNq">
-                                <rect key="frame" x="275" y="312" width="49" height="31"/>
+                                <rect key="frame" x="9" y="187" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchToggel:" destination="BYZ-38-t0r" eventType="valueChanged" id="n0n-lM-OrS"/>
                                 </connections>
                             </switch>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="128" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Tvt-PU-wPE">
-                                <rect key="frame" x="51" y="407" width="273" height="30"/>
+                                <rect key="frame" x="51" y="310" width="273" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="sliderMove" destination="BYZ-38-t0r" eventType="valueChanged" id="eI0-iP-Da4"/>
                                 </connections>
                             </slider>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="255" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OwV-lH-11Y">
-                                <rect key="frame" x="143" y="491" width="87" height="52"/>
+                                <rect key="frame" x="143" y="394" width="87" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="textFieldEdided" destination="BYZ-38-t0r" eventType="editingChanged" id="mxW-6t-UTU"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjo-tt-RbM">
-                                <rect key="frame" x="146" y="154" width="83" height="54"/>
+                                <rect key="frame" x="146" y="57" width="83" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="255"/>
@@ -90,13 +97,6 @@
                                     <action selector="buttonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="65t-lX-YHq"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNV-jR-PwV">
-                                <rect key="frame" x="202" y="260" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="switchToggel:" destination="BYZ-38-t0r" eventType="valueChanged" id="OTe-KO-uUb"/>
-                                </connections>
-                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

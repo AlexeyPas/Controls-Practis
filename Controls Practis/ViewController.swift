@@ -25,20 +25,41 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        rotetSwitches()
         updateUI()
+    }
+    
+    /// Updates number for the switches
+    func updateNumberFromSwitches()  {
+        var number = 0
+        for swit in switches{
+            number += swit.isOn ? swit.tag : 0
+        }
+        self.number = UInt8(number % 256)
+    }
+    
+    
+    /// Updetes switches from the number
+    func updateSwithes()  {
+        for swit in switches{
+        swit.isOn = Int(number) & swit.tag != 0
+        }
     }
     
     
     /// Updates all outlets to number
     func updateUI()  {
         button.setTitle("\(number)", for: [])
-        
-        // TODO: set switched to number
-        
-        
+        updateSwithes()
         slider.value = Float(number)
         textField.text = "\(number)"
     
+    }
+    
+    func rotetSwitches()  {
+        for swit in switches{
+            swit.layer.transform = CATransform3DMakeRotation(-.pi / 2, 0, 0, 1)
+        }
     }
     
     
@@ -47,6 +68,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func switchToggel(_ sender: UISwitch) {
+        updateNumberFromSwitches()
     }
     @IBAction func sliderMove() {
         number = UInt8(slider.value)
