@@ -8,6 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var number: UInt8 = 128{
+        didSet{
+            updateUI()
+        }
+    }
 
 
 
@@ -19,19 +25,35 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateUI()
+    }
+    
+    
+    /// Updates all outlets to number
+    func updateUI()  {
+        button.setTitle("\(number)", for: [])
+        
+        // TODO: set switched to number
+        
+        
+        slider.value = Float(number)
+        textField.text = "\(number)"
+    
     }
     
     
     @IBAction func buttonPressed() {
+        number = UInt8((Int(number) + 1) % 256)
     }
     
     @IBAction func switchToggel(_ sender: UISwitch) {
     }
     @IBAction func sliderMove() {
+        number = UInt8(slider.value)
     }
     
     @IBAction func textFieldEdided() {
+        number = UInt8(textField.text ?? "") ?? 128
     }
 }
 
